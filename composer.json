@@ -1,0 +1,21 @@
+{
+	"name": "webbuilders/sitemapxml-custom-routes",
+	"description": "Allows CMS admins to create custom routes that are included in the XML Sitemap.",
+	"keywords": ["silverstripe", "CMS", "sitemap", "xml"],
+	"license": "BSD-3-Clause",
+    "authors": [
+		{
+			"name": "Ryan McLaren",
+			"email": "ryan@webbuildersgroup.com"
+		}
+	],
+    "require": {
+		"silverstripe/framework": "~3.1",
+		"silverstripe/cms": "~3.1",
+        "silverstripe-googlesitemaps": "1.6"
+	},
+	"extra": {
+		"installer-name": "sitemapxml-custom-routes"
+	},
+	"minimum-stability": "dev"
+}
