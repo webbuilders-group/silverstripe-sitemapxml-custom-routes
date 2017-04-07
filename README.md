@@ -11,7 +11,7 @@ Allows CMS admins to define custom routes to include in their sites sitemap.xml.
 Extract all files into a folder called "sitemapxml-custom-routes" under your SilverStripe root or use composer (recommended):
 
 ```
-composer require webbuilders-group/sitemapxml-custom-routes
+composer require webbuilders/silverstripe-sitemapxml-custom-routes
 ```
 
 * Run dev/build?flush=all
