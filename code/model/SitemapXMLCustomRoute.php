@@ -13,16 +13,19 @@ class SitemapXMLCustomRoute extends DataObject {
     private static $plural_name='Custom Routes';
 
     private static $db=array(
-                                'Path'=>'Varchar(2083)'
+                                'Path'=>'Varchar(2083)',
+                                'Frequency'=>'Enum("yearly, monthly, weekly, daily, hourly, always", "monthly")'
                             );
 
     private static $summary_fields=array(
-                                            'Path'=>'Path'
+                                            'Path'=>'Path',
+                                            'Frequency'=>'Change Frequency'
                                         );
 
     public function getCMSFields() {
         $fields = FieldList::create(
-                        TextField::create('Path', 'Path', null, 2083)->setDescription('for example: http://example.com/company/about-us enter company/about-us')
+                        TextField::create('Path', 'Path', null, 2083)->setDescription('for example: http://example.com/company/about-us enter company/about-us'),
+                        DropdownField::create('Frequency', 'Change Frequency', $this->dbObject('Frequency')->enumValues())
                 );
 
         $this->extend('updateCMSFields', $fields);
@@ -69,6 +72,14 @@ class SitemapXMLCustomRoute extends DataObject {
 	public function Link() {
 		return $this->Path;
 	}
+
+    /**
+     * return the change freq. for this route
+     * @return String
+     */
+    public function getChangeFrequency(){
+        return $this->Frequency;
+    }
 
 
 }
