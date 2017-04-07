@@ -12,8 +12,7 @@
     "require": {
 		"silverstripe/framework": "~3.1",
 		"silverstripe/cms": "~3.1",
-        "silverstripe/googlesitemaps": "~1.6.0",
-		"composer/installers": "*"
+        "silverstripe/googlesitemaps": "~1.6.0"		
 	},
 	"extra": {
 		"installer-name": "sitemapxml-custom-routes"
