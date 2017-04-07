@@ -1,5 +1,5 @@
 {
-	"name": "webbuilders/sitemapxml-custom-routes",
+	"name": "webbuilders/silverstripe-sitemapxml-custom-routes",
 	"description": "Allows CMS admins to create custom routes that are included in the XML Sitemap.",
 	"keywords": ["silverstripe", "CMS", "sitemap", "xml"],
 	"license": "BSD-3-Clause",
